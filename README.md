@@ -4,14 +4,14 @@ Projeto desenvolvido em JAVAFX para a disciplina de Programação Orientada a Ob
 
 O projeto tem como objetivo ser um software de gestão de um empresa desenvolvedora de software, onde há áreas como Suporte, e Desenolvimento de Projetos.
 
-> Alunos envolvidos no projeto
+```
+Alunos envolvidos no projeto
+```
 
-```
-[Almir Giornes] <almirgiornes@gmail.com> 
-[Chrystian Souza] <ads.chrystian@gmail.com>
-[Gabriel Modesto] <gabrielrmodesto5@gmail.com>
-[Lucas Mallmann] <lucasmallmann76@gmail.com>
-```
+Almir Giornes <almirgiornes@gmail.com> <br>
+Chrystian Souza <ads.chrystian@gmail.com> <br>
+Gabriel Modesto <gabrielrmodesto5@gmail.com> <br>
+Lucas Mallmann <lucasmallmann76@gmail.com>
 
 > Banco de dados utilizado
 
