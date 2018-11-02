@@ -7,10 +7,10 @@ O projeto tem como objetivo ser um software de gestão de um empresa desenvolved
 > Alunos envolvidos no projeto
 
 ```
-[Almir Giornes]<almirgiornes@gmail.com> 
-[Chrystian Souza]<ads.chrystian@gmail.com>
-[Gabriel Modesto]<gabrielrmodesto5@gmail.com>
-[Lucas Mallmann]<lucasmallmann76@gmail.com>
+[Almir Giornes] <almirgiornes@gmail.com> 
+[Chrystian Souza] <ads.chrystian@gmail.com>
+[Gabriel Modesto] <gabrielrmodesto5@gmail.com>
+[Lucas Mallmann] <lucasmallmann76@gmail.com>
 ```
 
 > Banco de dados utilizado
