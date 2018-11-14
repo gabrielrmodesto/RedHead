@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.StackPane?>
 
-<StackPane fx:id="stackGerente" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="678.0" prefWidth="1170.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControllerPerfilGerente">
+<StackPane fx:id="stackGerente" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="678.0" prefWidth="1170.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PerfilGerenteController">
     <children>
         <Pane fx:id="paneGerente" prefHeight="678.0" prefWidth="1170.0">
             <children>
@@ -22,12 +22,12 @@
                         </ImageView>
                     </graphic>
                 </JFXButton>
-                <Label id="titulo" focusTraversable="false" layoutX="300.0" layoutY="40.0" stylesheets="@application.css" text="Seu Perfil" />
-                <JFXTextField id="campoCadastro" fx:id="nome" editable="false" focusColor="#4d4d4d" focusTraversable="false" labelFloat="true" layoutX="411.0" layoutY="123.0" prefHeight="25.0" prefWidth="505.0" promptText="Nome" stylesheets="@application.css" />
-                <JFXTextField id="campoCadastro" fx:id="endereco" editable="false" focusColor="#4d4d4d" focusTraversable="false" labelFloat="true" layoutX="411.0" layoutY="197.0" prefHeight="25.0" prefWidth="505.0" promptText="Endereço" stylesheets="@application.css" />
-                <JFXTextField id="campoCadastro" fx:id="cidade" editable="false" focusColor="#4d4d4d" focusTraversable="false" labelFloat="true" layoutX="411.0" layoutY="288.0" prefHeight="25.0" prefWidth="223.0" promptText="Cidade" stylesheets="@application.css" />
-                <JFXTextField id="campoCadastro" fx:id="login" editable="false" focusColor="#4d4d4d" focusTraversable="false" labelFloat="true" layoutX="505.0" layoutY="364.0" prefHeight="25.0" prefWidth="317.0" promptText="Login" stylesheets="@application.css" />
-                <JFXPasswordField id="campoCadastro" fx:id="senha" editable="false" focusColor="#4d4d4d" focusTraversable="false" labelFloat="true" layoutX="505.0" layoutY="444.0" prefHeight="25.0" prefWidth="317.0" promptText="Senha" stylesheets="@application.css" />
+                <Label id="titulo" focusTraversable="false" layoutX="300.0" layoutY="40.0" stylesheets="@style.css" text="Seu Perfil" />
+                <JFXTextField id="campoCadastro" fx:id="nome" editable="false" focusColor="#4d4d4d" focusTraversable="false" labelFloat="true" layoutX="411.0" layoutY="123.0" prefHeight="25.0" prefWidth="505.0" promptText="Nome" stylesheets="@style.css" />
+                <JFXTextField id="campoCadastro" fx:id="endereco" editable="false" focusColor="#4d4d4d" focusTraversable="false" labelFloat="true" layoutX="411.0" layoutY="197.0" prefHeight="25.0" prefWidth="505.0" promptText="Endereço" stylesheets="@style.css" />
+                <JFXTextField id="campoCadastro" fx:id="cidade" editable="false" focusColor="#4d4d4d" focusTraversable="false" labelFloat="true" layoutX="411.0" layoutY="288.0" prefHeight="25.0" prefWidth="223.0" promptText="Cidade" stylesheets="@style.css" />
+                <JFXTextField id="campoCadastro" fx:id="login" editable="false" focusColor="#4d4d4d" focusTraversable="false" labelFloat="true" layoutX="505.0" layoutY="364.0" prefHeight="25.0" prefWidth="317.0" promptText="Login" stylesheets="@style.css" />
+                <JFXPasswordField id="campoCadastro" fx:id="senha" editable="false" focusColor="#4d4d4d" focusTraversable="false" labelFloat="true" layoutX="505.0" layoutY="444.0" prefHeight="25.0" prefWidth="317.0" promptText="Senha" stylesheets="@style.css" />
                 <JFXButton fx:id="mostraSenha" buttonType="RAISED" focusTraversable="false" layoutX="822.0" layoutY="434.0" onAction="#mostrarSenha" prefHeight="30.0" prefWidth="30.0" text=" ">
                     <graphic>
                         <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
@@ -37,8 +37,8 @@
                         </ImageView>
                     </graphic>
                 </JFXButton>
-                <JFXButton id="botaoCadastro" fx:id="btnEditar" buttonType="RAISED" focusTraversable="false" layoutX="849.0" layoutY="516.0" onAction="#editarPerfil" stylesheets="@application.css" text="Editar" />
-                <JFXTextField id="campoCadastro" fx:id="estado" editable="false" focusColor="#4d4d4d" focusTraversable="false" labelFloat="true" layoutX="687.0" layoutY="288.0" prefHeight="28.0" prefWidth="108.0" promptText="Estado" stylesheets="@application.css" />
+                <JFXButton id="botaoCadastro" fx:id="btnEditar" buttonType="RAISED" focusTraversable="false" layoutX="849.0" layoutY="516.0" onAction="#editarPerfil" stylesheets="@style.css" text="Editar" />
+                <JFXTextField id="campoCadastro" fx:id="estado" editable="false" focusColor="#4d4d4d" focusTraversable="false" labelFloat="true" layoutX="687.0" layoutY="288.0" prefHeight="28.0" prefWidth="108.0" promptText="Estado" stylesheets="@style.css" />
             </children>
         </Pane>
     </children>

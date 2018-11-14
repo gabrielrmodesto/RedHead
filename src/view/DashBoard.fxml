@@ -9,13 +9,13 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.StackPane?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControllerDashBoard">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashBoardController">
     <children>
         <Pane layoutY="-6.0" prefHeight="768.0" prefWidth="1366.0" AnchorPane.bottomAnchor="6.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-6.0">
             <children>
-                <Pane id="panelLateral" prefHeight="777.0" prefWidth="200.0" stylesheets="@application.css">
+                <Pane id="panelLateral" prefHeight="777.0" prefWidth="200.0" stylesheets="@style.css">
                     <children>
-                        <JFXButton id="botaoHome" fx:id="imageHome" layoutX="2.0" layoutY="8.0" onAction="#telaDash" prefHeight="99.0" prefWidth="150.0" stylesheets="@application.css" text=" ">
+                        <JFXButton id="botaoHome" fx:id="imageHome" layoutX="2.0" layoutY="8.0" onAction="#telaDash" prefHeight="99.0" prefWidth="150.0" stylesheets="@style.css" text=" ">
                             <graphic>
                                 <ImageView fitHeight="79.0" fitWidth="168.0" focusTraversable="true" pickOnBounds="true" preserveRatio="true">
                                     <image>
@@ -24,7 +24,7 @@
                                 </ImageView>
                             </graphic>
                         </JFXButton>
-                        <JFXButton id="btnLateral" fx:id="btnDepartamento" buttonType="RAISED" graphicTextGap="6.0" layoutY="149.0" onAction="#telaDepartamentos" stylesheets="@application.css" text="Departamento">
+                        <JFXButton id="btnLateral" fx:id="btnDepartamento" buttonType="RAISED" graphicTextGap="6.0" layoutY="149.0" onAction="#telaDepartamentos" stylesheets="@style.css" text="Departamento">
                             <graphic>
                                 <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                                     <image>
@@ -33,7 +33,7 @@
                                 </ImageView>
                             </graphic>
                         </JFXButton>
-                        <JFXButton id="btnLateral" fx:id="btnFuncionarios" buttonType="RAISED" graphicTextGap="10.0" layoutX="1.0" layoutY="230.0" onAction="#telaFuncionarios" prefHeight="60.0" stylesheets="@application.css" text="Funcionários">
+                        <JFXButton id="btnLateral" fx:id="btnFuncionarios" buttonType="RAISED" graphicTextGap="10.0" layoutX="1.0" layoutY="230.0" onAction="#telaFuncionarios" prefHeight="60.0" stylesheets="@style.css" text="Funcionários">
                             <graphic>
                                 <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                                     <image>
@@ -42,7 +42,7 @@
                                 </ImageView>
                             </graphic>
                         </JFXButton>
-                        <JFXButton id="btnLateral" fx:id="btnClientes" buttonType="RAISED" graphicTextGap="20.0" layoutY="390.0" onAction="#telaCientes" stylesheets="@application.css" text="Clientes">
+                        <JFXButton id="btnLateral" fx:id="btnClientes" buttonType="RAISED" graphicTextGap="20.0" layoutY="390.0" onAction="#telaCientes" stylesheets="@style.css" text="Clientes">
                             <graphic>
                                 <ImageView fitHeight="150.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                                     <image>
@@ -51,7 +51,7 @@
                                 </ImageView>
                             </graphic>
                         </JFXButton>
-                        <JFXButton id="btnLateral" fx:id="btnProjetos" buttonType="RAISED" graphicTextGap="20.0" layoutY="308.0" onAction="#telaProjetos" stylesheets="@application.css" text="Projetos">
+                        <JFXButton id="btnLateral" fx:id="btnProjetos" buttonType="RAISED" graphicTextGap="20.0" layoutY="308.0" onAction="#telaProjetos" stylesheets="@style.css" text="Projetos">
                             <graphic>
                                 <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                                     <image>
@@ -63,7 +63,7 @@
                                 <Insets />
                             </opaqueInsets>
                         </JFXButton>
-                        <JFXButton id="btnLateral" fx:id="btnSuporte" buttonType="RAISED" graphicTextGap="20.0" layoutX="2.0" layoutY="468.0" onAction="#telaSuporte" stylesheets="@application.css" text="Suporte">
+                        <JFXButton id="btnLateral" fx:id="btnSuporte" buttonType="RAISED" graphicTextGap="20.0" layoutX="2.0" layoutY="468.0" onAction="#telaSuporte" stylesheets="@style.css" text="Suporte">
                             <graphic>
                                 <ImageView fitHeight="150.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                                     <image>
@@ -74,7 +74,7 @@
                         </JFXButton>
                     </children>
                 </Pane>
-                <Pane id="panelTop" layoutX="199.0" prefHeight="60.0" prefWidth="1170.0" stylesheets="@application.css">
+                <Pane id="panelTop" layoutX="199.0" prefHeight="60.0" prefWidth="1170.0" stylesheets="@style.css">
                     <children>
                         <JFXButton fx:id="botaoImagemUser" buttonType="RAISED" focusTraversable="false" layoutX="1015.0" layoutY="4.0" onAction="#carregaTelaPerfil" prefHeight="50.0" prefWidth="67.0" text=" ">
                             <graphic>
@@ -99,7 +99,7 @@
                 <WeekDayHeaderView layoutX="199.0" layoutY="60.0" prefHeight="30.0" prefWidth="1174.0" />
                 <StackPane fx:id="stackDash" layoutX="199.0" layoutY="90.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="678.0" prefWidth="1170.0">
                     <children>
-                        <AnchorPane id="anchorPai" fx:id="anchorFixo" accessibleRole="PAGINATION" prefHeight="678.0" prefWidth="1170.0" stylesheets="@application.css" />
+                        <AnchorPane id="anchorPai" fx:id="anchorFixo" accessibleRole="PAGINATION" prefHeight="678.0" prefWidth="1170.0" stylesheets="@style.css" />
                     </children>
                 </StackPane>
             </children>

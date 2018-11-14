@@ -9,16 +9,16 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 
-<Pane prefHeight="678.0" prefWidth="1170.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControllerConsultaClientes">
+<Pane prefHeight="678.0" prefWidth="1170.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ConsultaClienteController">
     <children>
-        <AnchorPane id="anchorResultado" fx:id="anchorResultados" layoutX="200.0" layoutY="225.0" prefHeight="300.0" prefWidth="800.0" stylesheets="@application.css">
+        <AnchorPane id="anchorResultado" fx:id="anchorResultados" layoutX="200.0" layoutY="225.0" prefHeight="300.0" prefWidth="800.0" stylesheets="@style.css">
             <children>
                 <JFXTreeTableView fx:id="tabelaResultados" layoutX="14.0" layoutY="-100.0" prefHeight="302.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
             </children>
         </AnchorPane>
-        <Label id="tituloInicial" layoutX="200.0" layoutY="40.0" stylesheets="@application.css" text="Pesquisar Clientes" />
-        <JFXTextField id="campoCadastro" fx:id="cpfCNPJ" focusColor="#4d4d4d" focusTraversable="false" labelFloat="true" layoutX="200.0" layoutY="142.0" prefHeight="28.0" prefWidth="236.0" promptText="CPF/CNPJ" stylesheets="@application.css" />
-        <JFXTextField id="campoCadastro" fx:id="nomeCliente" focusColor="#4d4d4d" labelFloat="true" layoutX="528.0" layoutY="142.0" prefHeight="28.0" prefWidth="404.0" promptText="Nome/Razão Social" stylesheets="@application.css" />
+        <Label id="tituloInicial" layoutX="200.0" layoutY="40.0" stylesheets="@style.css" text="Pesquisar Clientes" />
+        <JFXTextField id="campoCadastro" fx:id="cpfCNPJ" focusColor="#4d4d4d" focusTraversable="false" labelFloat="true" layoutX="200.0" layoutY="142.0" prefHeight="28.0" prefWidth="236.0" promptText="CPF/CNPJ" stylesheets="@style.css" />
+        <JFXTextField id="campoCadastro" fx:id="nomeCliente" focusColor="#4d4d4d" labelFloat="true" layoutX="528.0" layoutY="142.0" prefHeight="28.0" prefWidth="404.0" promptText="Nome/Razão Social" stylesheets="@style.css" />
         <JFXButton fx:id="pesquisar" layoutX="962.0" layoutY="137.0" onAction="#consultarCliente" prefHeight="30.0" prefWidth="30.0" text=" ">
             <graphic>
                 <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">

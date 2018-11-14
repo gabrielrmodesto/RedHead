@@ -11,16 +11,16 @@
 <?import javafx.scene.layout.StackPane?>
 
 
-<StackPane fx:id="stackResultadoProjeto" prefHeight="678.0" prefWidth="1170.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControllerConsultaProjetos">
+<StackPane fx:id="stackResultadoProjeto" prefHeight="678.0" prefWidth="1170.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ConsultaProjetoController">
     <children>
         <Pane prefHeight="678.0" prefWidth="1170.0">
             <children>
-                <Label id="tituloInicial" layoutX="200.0" layoutY="40.0" stylesheets="@application.css" text="Pesquisar Projetos" />
-                <JFXTextField id="campoCadastro" fx:id="codProjeto" focusColor="#4d4d4d" labelFloat="true" layoutX="149.0" layoutY="131.0" prefHeight="28.0" prefWidth="117.0" promptText="Código Projeto" stylesheets="@application.css" />
-                <JFXTextField id="campoCadastro" fx:id="nomeProjeto" focusColor="#4d4d4d" labelFloat="true" layoutX="369.0" layoutY="131.0" prefHeight="28.0" prefWidth="470.0" promptText="Nome Projeto" stylesheets="@application.css" />
-                <JFXTextField id="campoCadastro" fx:id="cpfClienteRequerente" focusColor="#4d4d4d" labelFloat="true" layoutX="149.0" layoutY="199.0" prefHeight="28.0" prefWidth="138.0" promptText="CPF/CNPJ Cliente" stylesheets="@application.css" />
-                <JFXTextField id="campoCadastro" fx:id="nomeRequerente" focusColor="#4d4d4d" focusTraversable="false" labelFloat="true" layoutX="369.0" layoutY="199.0" prefHeight="28.0" prefWidth="459.0" promptText="Nome/Razão Social" stylesheets="@application.css" />
-                <AnchorPane id="anchorResultado" fx:id="anchorResultados" layoutX="142.0" layoutY="281.0" prefHeight="300.0" prefWidth="800.0" stylesheets="@application.css">
+                <Label id="tituloInicial" layoutX="200.0" layoutY="40.0" stylesheets="@style.css" text="Pesquisar Projetos" />
+                <JFXTextField id="campoCadastro" fx:id="codProjeto" focusColor="#4d4d4d" labelFloat="true" layoutX="149.0" layoutY="131.0" prefHeight="28.0" prefWidth="117.0" promptText="Código Projeto" stylesheets="@style.css" />
+                <JFXTextField id="campoCadastro" fx:id="nomeProjeto" focusColor="#4d4d4d" labelFloat="true" layoutX="369.0" layoutY="131.0" prefHeight="28.0" prefWidth="470.0" promptText="Nome Projeto" stylesheets="@style.css" />
+                <JFXTextField id="campoCadastro" fx:id="cpfClienteRequerente" focusColor="#4d4d4d" labelFloat="true" layoutX="149.0" layoutY="199.0" prefHeight="28.0" prefWidth="138.0" promptText="CPF/CNPJ Cliente" stylesheets="@style.css" />
+                <JFXTextField id="campoCadastro" fx:id="nomeRequerente" focusColor="#4d4d4d" focusTraversable="false" labelFloat="true" layoutX="369.0" layoutY="199.0" prefHeight="28.0" prefWidth="459.0" promptText="Nome/Razão Social" stylesheets="@style.css" />
+                <AnchorPane id="anchorResultado" fx:id="anchorResultados" layoutX="142.0" layoutY="281.0" prefHeight="300.0" prefWidth="800.0" stylesheets="@style.css">
                     <children>
                         <JFXTreeTableView fx:id="tabelaResultadosProjetos" layoutY="-114.0" prefHeight="300.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
                     </children>

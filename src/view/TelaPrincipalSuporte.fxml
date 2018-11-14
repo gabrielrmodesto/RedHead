@@ -7,10 +7,10 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.Pane?>
 
-<Pane fx:id="painelSuporte" prefHeight="678.0" prefWidth="1170.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControllerPrincipalSuporte">
+<Pane fx:id="painelSuporte" prefHeight="678.0" prefWidth="1170.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TelaPrincipalSuporteController">
     <children>
-        <Label id="tituloInicial" layoutX="200.0" layoutY="33.0" stylesheets="@application.css" text="Suportes da REDHEAD" />
-        <JFXButton id="btnPainelCentral" fx:id="btnRegistrarSuporte" alignment="CENTER" buttonType="RAISED" contentDisplay="BOTTOM" focusTraversable="false" layoutX="151.0" layoutY="264.0" onAction="#telaRegistrarSuporte" stylesheets="@application.css" text="Registar Suporte">
+        <Label id="tituloInicial" layoutX="200.0" layoutY="33.0" stylesheets="@style.css" text="Suportes da REDHEAD" />
+        <JFXButton id="btnPainelCentral" fx:id="btnRegistrarSuporte" alignment="CENTER" buttonType="RAISED" contentDisplay="BOTTOM" focusTraversable="false" layoutX="151.0" layoutY="264.0" onAction="#telaRegistrarSuporte" stylesheets="@style.css" text="Registar Suporte">
             <graphic>
                 <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
                     <image>
@@ -22,7 +22,7 @@
                 <Cursor fx:constant="HAND" />
             </cursor>
         </JFXButton>
-        <JFXButton id="btnPainelCentral" fx:id="btnHistoricoSuporte" alignment="CENTER" buttonType="RAISED" contentDisplay="BOTTOM" focusTraversable="false" layoutX="681.0" layoutY="264.0" onAction="#telaHistoricoSuporte" stylesheets="@application.css" text="Histórico de Suportes">
+        <JFXButton id="btnPainelCentral" fx:id="btnHistoricoSuporte" alignment="CENTER" buttonType="RAISED" contentDisplay="BOTTOM" focusTraversable="false" layoutX="681.0" layoutY="264.0" onAction="#telaHistoricoSuporte" stylesheets="@style.css" text="Histórico de Suportes">
             <graphic>
                 <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
                     <image>

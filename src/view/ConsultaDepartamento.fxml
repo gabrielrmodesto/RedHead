@@ -9,11 +9,11 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 
-<Pane fx:id="painelConsultaDepartamento" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="678.0" prefWidth="1170.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControllerConsultarDepartamento">
+<Pane fx:id="painelConsultaDepartamento" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="678.0" prefWidth="1170.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ConsultaDepartamentoController">
     <children>
-        <Label id="titulo" layoutX="200.0" layoutY="40.0" stylesheets="@application.css" text="Pesquisa Departamento" />
-        <JFXTextField id="campoCadastro" fx:id="codDepartamento" focusColor="#4d4d4d" labelFloat="true" layoutX="200.0" layoutY="127.0" prefHeight="28.0" prefWidth="168.0" promptText="Código Departamento" stylesheets="@application.css" />
-        <AnchorPane id="anchorResultado" layoutX="152.0" layoutY="239.0" prefHeight="300.0" prefWidth="800.0" stylesheets="@application.css">
+        <Label id="titulo" layoutX="200.0" layoutY="40.0" stylesheets="@style.css" text="Pesquisa Departamento" />
+        <JFXTextField id="campoCadastro" fx:id="codDepartamento" focusColor="#4d4d4d" labelFloat="true" layoutX="200.0" layoutY="127.0" prefHeight="28.0" prefWidth="168.0" promptText="Código Departamento" stylesheets="@style.css" />
+        <AnchorPane id="anchorResultado" layoutX="152.0" layoutY="239.0" prefHeight="300.0" prefWidth="800.0" stylesheets="@style.css">
             <children>
                 <JFXTreeTableView fx:id="tabelaResultados" layoutX="14.0" layoutY="-74.0" prefHeight="328.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
             </children>
@@ -27,6 +27,6 @@
                 </ImageView>
             </graphic>
         </JFXButton>
-        <JFXTextField id="campoCadastro" fx:id="nomeDepartamento" focusColor="#4d4d4d" labelFloat="true" layoutX="440.0" layoutY="127.0" prefHeight="28.0" prefWidth="484.0" promptText="Nome Departamento" stylesheets="@application.css" />
+        <JFXTextField id="campoCadastro" fx:id="nomeDepartamento" focusColor="#4d4d4d" labelFloat="true" layoutX="440.0" layoutY="127.0" prefHeight="28.0" prefWidth="484.0" promptText="Nome Departamento" stylesheets="@style.css" />
     </children>
 </Pane>

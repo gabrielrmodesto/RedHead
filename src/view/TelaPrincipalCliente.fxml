@@ -8,10 +8,10 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.Pane?>
 
-<Pane fx:id="painelClientes" prefHeight="678.0" prefWidth="1170.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControllerPrincipalClientes">
+<Pane fx:id="painelClientes" prefHeight="678.0" prefWidth="1170.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TelaPrincipalClienteController">
     <children>
-        <Label id="tituloInicial" layoutX="200.0" layoutY="40.0" stylesheets="@application.css" text="Clientes da REDHEAD" />
-        <JFXButton id="btnPainelCentral" fx:id="btnAlterarClientes" alignment="CENTER" buttonType="RAISED" contentDisplay="BOTTOM" focusTraversable="false" layoutX="430.0" layoutY="390.0" onAction="#telaAlterarCliente" prefHeight="200.0" prefWidth="350.0" stylesheets="@application.css" text="Alterar Dados do Cliente">
+        <Label id="tituloInicial" layoutX="200.0" layoutY="40.0" stylesheets="@style.css" text="Clientes da REDHEAD" />
+        <JFXButton id="btnPainelCentral" fx:id="btnAlterarClientes" alignment="CENTER" buttonType="RAISED" contentDisplay="BOTTOM" focusTraversable="false" layoutX="430.0" layoutY="390.0" onAction="#telaAlterarCliente" prefHeight="200.0" prefWidth="350.0" stylesheets="@style.css" text="Alterar Dados do Cliente">
             <graphic>
                 <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
                     <image>
@@ -26,7 +26,7 @@
                 <Cursor fx:constant="HAND" />
             </cursor>
         </JFXButton>
-        <JFXButton id="btnPainelCentral" fx:id="btnCadastrarClientes" alignment="CENTER" buttonType="RAISED" contentDisplay="BOTTOM" focusTraversable="false" layoutX="150.0" layoutY="140.0" onAction="#telaCadastrarCliente" stylesheets="@application.css" text="Cadastrar Clientes">
+        <JFXButton id="btnPainelCentral" fx:id="btnCadastrarClientes" alignment="CENTER" buttonType="RAISED" contentDisplay="BOTTOM" focusTraversable="false" layoutX="150.0" layoutY="140.0" onAction="#telaCadastrarCliente" stylesheets="@style.css" text="Cadastrar Clientes">
             <graphic>
                 <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
                     <image>
@@ -41,7 +41,7 @@
                 <Cursor fx:constant="HAND" />
             </cursor>
         </JFXButton>
-        <JFXButton id="btnPainelCentral" fx:id="btnConsultarClientes" alignment="CENTER" buttonType="RAISED" contentDisplay="BOTTOM" focusTraversable="false" layoutX="680.0" layoutY="140.0" onAction="#telaConsultarCliente" stylesheets="@application.css" text="Consultar Dados de Clientes">
+        <JFXButton id="btnPainelCentral" fx:id="btnConsultarClientes" alignment="CENTER" buttonType="RAISED" contentDisplay="BOTTOM" focusTraversable="false" layoutX="680.0" layoutY="140.0" onAction="#telaConsultarCliente" stylesheets="@style.css" text="Consultar Dados de Clientes">
             <graphic>
                 <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
                     <image>

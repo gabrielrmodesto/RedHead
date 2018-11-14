@@ -7,21 +7,21 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.StackPane?>
 
-<StackPane fx:id="stackCadastro" prefHeight="678.0" prefWidth="1170.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControllerCadastroProjetos">
+<StackPane fx:id="stackCadastro" prefHeight="678.0" prefWidth="1170.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CadastroProjetoController">
     <children>
         <Pane fx:id="painelCadastro" prefHeight="678.0" prefWidth="1170.0">
             <children>
-                <Label id="tituloInicial" layoutX="200.0" layoutY="40.0" stylesheets="@application.css" text="Cadastro de Projetos" />
-                <JFXTextField id="campoCadastro" fx:id="nomeProjeto" focusColor="#4d4d4d" focusTraversable="false" labelFloat="true" layoutX="200.0" layoutY="150.0" prefHeight="28.0" prefWidth="697.0" promptText="Nome do Projeto" stylesheets="@application.css" />
-                <JFXTextField id="campoCadastro" fx:id="equipe" focusColor="#4d4d4d" focusTraversable="false" labelFloat="true" layoutX="201.0" layoutY="240.0" prefHeight="28.0" prefWidth="193.0" promptText="Equipe envolvida (QTD)" stylesheets="@application.css" />
-                <JFXDatePicker id="campoCadastro" fx:id="prazoEntrega" defaultColor="#4d4d4d" focusTraversable="false" layoutX="695.0" layoutY="239.0" prefHeight="28.0" prefWidth="213.0" promptText="Prazo entrega" stylesheets="@application.css" />
-                <JFXTextField id="campoCadastro" fx:id="valor" focusColor="#4d4d4d" focusTraversable="false" labelFloat="true" layoutX="205.0" layoutY="336.0" prefHeight="28.0" prefWidth="193.0" promptText="Valor (R$)" stylesheets="@application.css" />
-                <JFXTextField id="campoCadastro" fx:id="nomeCliente" focusColor="#4d4d4d" focusTraversable="false" labelFloat="true" layoutX="205.0" layoutY="440.0" prefHeight="28.0" prefWidth="675.0" promptText="Cliente Requerente" stylesheets="@application.css" />
-                <JFXButton id="botaoCadastro" fx:id="btnCadastrar" focusTraversable="false" layoutX="770.0" layoutY="550.0" onAction="#confirmaCadastro" stylesheets="@application.css" text="Cadastrar" />
-                <JFXButton id="botaoCadastro" fx:id="btnLimpar" focusTraversable="false" layoutX="930.0" layoutY="550.0" onAction="#limpaCampos" stylesheets="@application.css" text="Limpar" />
-                <JFXTextField id="campoCadastro" fx:id="cpfFuncionario" focusColor="#4d4d4d" focusTraversable="false" labelFloat="true" layoutX="436.0" layoutY="240.0" prefHeight="28.0" prefWidth="228.0" promptText="CPF Funcionário" stylesheets="@application.css" />
-                <JFXTextField id="campoCadastro" fx:id="cpfCliente" focusColor="#4d4d4d" focusTraversable="false" labelFloat="true" layoutX="442.0" layoutY="336.0" prefHeight="28.0" prefWidth="213.0" promptText="CPF Cliente" stylesheets="@application.css" />
-                <JFXTextField id="campoCadastro" fx:id="codDepartamento" focusColor="#4d4d4d" focusTraversable="false" labelFloat="true" layoutX="698.0" layoutY="336.0" promptText="Código Departamento" stylesheets="@application.css" />
+                <Label id="tituloInicial" layoutX="200.0" layoutY="40.0" stylesheets="@style.css" text="Cadastro de Projetos" />
+                <JFXTextField id="campoCadastro" fx:id="nomeProjeto" focusColor="#4d4d4d" focusTraversable="false" labelFloat="true" layoutX="200.0" layoutY="150.0" prefHeight="28.0" prefWidth="697.0" promptText="Nome do Projeto" stylesheets="@style.css" />
+                <JFXTextField id="campoCadastro" fx:id="equipe" focusColor="#4d4d4d" focusTraversable="false" labelFloat="true" layoutX="201.0" layoutY="240.0" prefHeight="28.0" prefWidth="193.0" promptText="Equipe envolvida (QTD)" stylesheets="@style.css" />
+                <JFXDatePicker id="campoCadastro" fx:id="prazoEntrega" defaultColor="#4d4d4d" focusTraversable="false" layoutX="695.0" layoutY="239.0" prefHeight="28.0" prefWidth="213.0" promptText="Prazo entrega" stylesheets="@style.css" />
+                <JFXTextField id="campoCadastro" fx:id="valor" focusColor="#4d4d4d" focusTraversable="false" labelFloat="true" layoutX="205.0" layoutY="336.0" prefHeight="28.0" prefWidth="193.0" promptText="Valor (R$)" stylesheets="@style.css" />
+                <JFXTextField id="campoCadastro" fx:id="nomeCliente" focusColor="#4d4d4d" focusTraversable="false" labelFloat="true" layoutX="205.0" layoutY="440.0" prefHeight="28.0" prefWidth="675.0" promptText="Cliente Requerente" stylesheets="@style.css" />
+                <JFXButton id="botaoCadastro" fx:id="btnCadastrar" focusTraversable="false" layoutX="770.0" layoutY="550.0" onAction="#confirmaCadastro" stylesheets="@style.css" text="Cadastrar" />
+                <JFXButton id="botaoCadastro" fx:id="btnLimpar" focusTraversable="false" layoutX="930.0" layoutY="550.0" onAction="#limpaCampos" stylesheets="@style.css" text="Limpar" />
+                <JFXTextField id="campoCadastro" fx:id="cpfFuncionario" focusColor="#4d4d4d" focusTraversable="false" labelFloat="true" layoutX="436.0" layoutY="240.0" prefHeight="28.0" prefWidth="228.0" promptText="CPF Funcionário" stylesheets="@style.css" />
+                <JFXTextField id="campoCadastro" fx:id="cpfCliente" focusColor="#4d4d4d" focusTraversable="false" labelFloat="true" layoutX="442.0" layoutY="336.0" prefHeight="28.0" prefWidth="213.0" promptText="CPF Cliente" stylesheets="@style.css" />
+                <JFXTextField id="campoCadastro" fx:id="codDepartamento" focusColor="#4d4d4d" focusTraversable="false" labelFloat="true" layoutX="698.0" layoutY="336.0" promptText="Código Departamento" stylesheets="@style.css" />
             </children>
         </Pane>
     </children>
