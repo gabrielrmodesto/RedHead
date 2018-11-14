@@ -1,14 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.net.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TelaPrincipalSuporteController">
-    <stylesheets>
-        <URL value="@style.css"/>
-    </stylesheets>
-</AnchorPane>
+<Pane fx:id="painelSuporte" prefHeight="678.0" prefWidth="1170.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControllerPrincipalSuporte">
+    <children>
+        <Label id="tituloInicial" layoutX="200.0" layoutY="33.0" stylesheets="@application.css" text="Suportes da REDHEAD" />
+        <JFXButton id="btnPainelCentral" fx:id="btnRegistrarSuporte" alignment="CENTER" buttonType="RAISED" contentDisplay="BOTTOM" focusTraversable="false" layoutX="151.0" layoutY="264.0" onAction="#telaRegistrarSuporte" stylesheets="@application.css" text="Registar Suporte">
+            <graphic>
+                <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../images/support.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </JFXButton>
+        <JFXButton id="btnPainelCentral" fx:id="btnHistoricoSuporte" alignment="CENTER" buttonType="RAISED" contentDisplay="BOTTOM" focusTraversable="false" layoutX="681.0" layoutY="264.0" onAction="#telaHistoricoSuporte" stylesheets="@application.css" text="Histórico de Suportes">
+            <graphic>
+                <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../images/schedule.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </JFXButton>
+    </children>
+</Pane>

@@ -1,14 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.net.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.EscolherLoginController">
-    <stylesheets>
-        <URL value="@style.css"/>
-    </stylesheets>
-</AnchorPane>
+<StackPane fx:id="painelLogin" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="678.0" prefWidth="1170.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControllerEscolheLogin">
+    <children>
+        <Pane prefHeight="678.0" prefWidth="1170.0">
+            <children>
+                <Label id="titulo" layoutX="200.0" layoutY="40.0" stylesheets="@application.css" text="Escolha seu Login" />
+                <JFXTextField id="txtLoginFuncionario" fx:id="campoLogin" focusColor="#4d4d4d" focusTraversable="false" labelFloat="true" layoutX="350.0" layoutY="172.0" prefHeight="31.0" prefWidth="391.0" promptText="Login" stylesheets="@application.css" />
+                <JFXPasswordField id="txtSenhaFuncionario" fx:id="campoSenha" focusColor="#4d4d4d" focusTraversable="false" labelFloat="true" layoutX="350.0" layoutY="276.0" prefHeight="31.0" prefWidth="391.0" promptText="Senha" stylesheets="@application.css" />
+                <JFXPasswordField id="txtSenhaFuncionario" fx:id="campoConfirmaSenha" focusColor="#4d4d4d" focusTraversable="false" labelFloat="true" layoutX="350.0" layoutY="377.0" prefHeight="31.0" prefWidth="391.0" promptText="Confirme a senha" stylesheets="@application.css" />
+                <JFXButton id="botaoCadastro" fx:id="btnEnviar" buttonType="RAISED" focusTraversable="false" layoutX="426.0" layoutY="504.0" onAction="#confirmaLogin" stylesheets="@application.css" text="Enviar" />
+                <JFXButton id="botaoCadastro" fx:id="btnLmpar" buttonType="RAISED" focusTraversable="false" layoutX="607.0" layoutY="505.0" onAction="#limpaDados" stylesheets="@application.css" text="Limpar" />
+            </children>
+        </Pane>
+    </children>
+</StackPane>

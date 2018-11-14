@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.net.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HistoricoSuporteController">
-    <stylesheets>
-        <URL value="@style.css"/>
-    </stylesheets>
-</AnchorPane>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="678.0" prefWidth="1170.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.HistoricoSuporteController">
+    <children>
+        <Label id="titulo" layoutX="200.0" layoutY="40.0" stylesheets="@application.css" text="Histórico do Suporte" />
+        <JFXTextField id="campoCadastro" fx:id="tipoReclamacao" focusColor="#4d4d4d" focusTraversable="false" labelFloat="true" layoutX="200.0" layoutY="137.0" prefHeight="28.0" prefWidth="336.0" promptText="Tipo de Reclamação" stylesheets="@application.css" />
+        <AnchorPane id="anchorResultado" layoutX="185.0" layoutY="228.0" prefHeight="360.0" prefWidth="800.0" stylesheets="@application.css">
+            <children>
+                <JFXTreeTableView fx:id="tabelaResultadosSuporte" layoutX="14.0" prefHeight="402.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+            </children>
+        </AnchorPane>
+    </children>
+</Pane>

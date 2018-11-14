@@ -1,7 +1,85 @@
-/*
- * Empty Stylesheet file.
- */
-
-.mainFxmlClass {
-
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+*{
+    -fx-font-family: sans-serif;
+}
+#panelLogin{
+    -fx-background-color: linear-gradient(#4472ca, #52d1dc);
+}
+#lblBemVindo{
+    -fx-font-size: 30px;
+}
+#lblRed{
+    -fx-font-size: 40px;
+    -fx-font-weight: bold;
+}
+#txtLogin, #txtSenha{
+    -fx-font-size: 20px;
+    -fx-text-fill: #eeeeee;
+}
+#btnEntrar{
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #eeeeee;
+    -fx-border-color: #eeeeee;
+    -fx-border-radius: 10%;
+    -fx-padding: 10px;    
+}
+#panelLateral{
+    -fx-background-color: #212121;
+}
+#btnLateral{
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-pref-width: 200px;
+    -fx-pref-height: 60px;
+    -fx-text-fill: #bcd4de;
+}
+#btnLateral:focused{
+    -fx-background-color: #000;
+}
+#panelTop{
+    -fx-background-color: #64b5f6;
+}
+#titulo{
+    -fx-font-size: 34px;
+    -fx-font-weight: bold;
+}
+#campoCadastro{
+    -fx-font-size: 16px;			
+}
+#botaoCadastro{
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+    -fx-border-radius: 5%;
+    -fx-border-color: #4d4d4d;
+}
+#tituloInicial{
+    -fx-font-size: 42px;
+    -fx-font-weight: bold;
+}
+#btnPainelCentral{
+    -fx-background-radius: 12%;
+    -fx-border-radius: 10%;
+    -fx-border-color: #4d4d4d;
+    -fx-background-color: #fff;
+    -fx-pref-width: 350px;
+    -fx-pref-height: 200px;
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+}
+#anchorPai{
+    -fx-background-color: #fafafa;
+}
+#anchorResultado{
+    -fx-border-color: #4d4d4d;
+}
+#btnEscolherFoto{
+    -fx-font-size: 18px;
+}
+#txtSenhaFuncionario,#txtLoginFuncionario{
+    -fx-font-size: 20px;
+}
+#botaoHome:focused{
+    -fx-background-color: transparent;
 }

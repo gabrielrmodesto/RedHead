@@ -1,14 +1,102 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.net.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PanelGraficoController">
-    <stylesheets>
-        <URL value="@style.css"/>
-    </stylesheets>
-</AnchorPane>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1170.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.PaneGraficoController">
+    <children>
+        <PieChart fx:id="projetoGrafico" labelsVisible="false" layoutX="51.0" layoutY="234.0" prefHeight="359.0" prefWidth="392.0" style="-fx-background-color: white;" />
+        <HBox alignment="CENTER_LEFT" layoutX="51.0" layoutY="156.0" prefHeight="78.0" prefWidth="392.0" style="-fx-background-color: white;">
+            <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </padding>
+            <children>
+                <VBox>
+                    <children>
+                        <Label fx:id="lbGraficoProjeto" text="Estatística de Projetos" />
+                        <Label fx:id="lbAnd" text="Veja o andamento dos projetos da Red Head" />
+                    </children>
+                </VBox>
+            </children>
+        </HBox>
+        <LineChart fx:id="rendaGrafico" layoutX="507.0" layoutY="217.0" legendVisible="false" prefHeight="372.0" prefWidth="632.0" style="-fx-background-color: white;">
+            <xAxis>
+                <CategoryAxis side="BOTTOM" />
+            </xAxis>
+            <yAxis>
+                <NumberAxis side="LEFT" />
+            </yAxis>
+        </LineChart>
+        <HBox alignment="CENTER_LEFT" layoutX="507.0" layoutY="156.0" prefHeight="61.0" prefWidth="632.0" style="-fx-background-color: white;">
+            <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </padding>
+            <children>
+                <VBox>
+                    <children>
+                        <Label fx:id="lbRenda" text="Renda" />
+                        <Label fx:id="lbEstatRenda" text="Veja a estatística de Renda" />
+                    </children>
+                </VBox>
+            </children>
+        </HBox>
+        <StackPane layoutX="89.0" layoutY="28.0" prefHeight="95.0" prefWidth="250.0">
+            <children>
+                <Pane fx:id="paneTeste" prefHeight="200.0" prefWidth="200.0">
+                    <children>
+                        <Label fx:id="lbFun" layoutX="151.0" layoutY="14.0" text="769" />
+                        <Label fx:id="lbTotalFun" layoutX="125.0" layoutY="60.0" text="Funcionários" />
+                        <ImageView fitHeight="71.0" fitWidth="95.0" layoutX="26.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/pessoa_icon.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </Pane>
+            </children>
+        </StackPane>
+        <StackPane layoutX="443.0" layoutY="28.0" prefHeight="95.0" prefWidth="250.0">
+            <children>
+                <Pane fx:id="paneCli" prefHeight="81.0" prefWidth="150.0">
+                    <children>
+                        <Label fx:id="lbCli" layoutX="151.0" layoutY="18.0" text="1500" />
+                        <Label fx:id="lbTotalCli" layoutX="151.0" layoutY="64.0" text="Clientes" />
+                        <ImageView fitHeight="71.0" fitWidth="95.0" layoutX="24.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/icone-indicacao.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </Pane>
+            </children>
+        </StackPane>
+        <StackPane layoutX="809.0" layoutY="28.0" prefHeight="95.0" prefWidth="301.0">
+            <children>
+                <Pane fx:id="paneDinheiro" prefHeight="95.0" prefWidth="263.0">
+                    <children>
+                        <Label fx:id="lbDin" layoutX="121.0" layoutY="34.0" prefHeight="31.0" prefWidth="177.0" text="1500.99" />
+                        <ImageView fitHeight="71.0" fitWidth="80.0" layoutX="14.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/bulb-money-flat.png" />
+                            </image>
+                        </ImageView>
+                        <Label fx:id="lbCifrao" layoutX="96.0" layoutY="31.0" text="\$" />
+                    </children>
+                </Pane>
+            </children>
+        </StackPane>
+        <HBox layoutX="89.0" layoutY="120.0" prefHeight="21.0" prefWidth="250.0" style="-fx-background-color: #2196F3;" />
+        <HBox layoutX="443.0" layoutY="120.0" prefHeight="21.0" prefWidth="250.0" style="-fx-background-color: #D84315;" />
+        <HBox layoutX="809.0" layoutY="120.0" prefHeight="21.0" prefWidth="301.0" style="-fx-background-color: #4CAF50;" />
+    </children>
+</Pane>

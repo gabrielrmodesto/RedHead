@@ -1,14 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.net.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TelaPrincipalProjetoController">
-    <stylesheets>
-        <URL value="@style.css"/>
-    </stylesheets>
-</AnchorPane>
+<Pane fx:id="painelProjetos" prefHeight="678.0" prefWidth="1170.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControllerPrincipalProjetos">
+    <children>
+        <Label id="tituloInicial" layoutX="200.0" layoutY="40.0" stylesheets="@application.css" text="Projetos da REDHEAD" />
+        <JFXButton id="btnPainelCentral" fx:id="btnCadastroProjetos" alignment="CENTER" buttonType="RAISED" contentDisplay="BOTTOM" focusTraversable="false" layoutX="150.0" layoutY="140.0" onAction="#telaCadastrarProjeto" stylesheets="@application.css" text="Cadastrar Projeto">
+            <graphic>
+                <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../images/cadastro.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </JFXButton>
+        <JFXButton id="btnPainelCentral" fx:id="btnAlterarProjeto" alignment="CENTER" buttonType="RAISED" contentDisplay="BOTTOM" focusTraversable="false" layoutX="430.0" layoutY="390.0" onAction="#telaAlteraProjeto" stylesheets="@application.css" text="Realizar Alterações">
+            <graphic>
+                <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../images/atualizar.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </JFXButton>
+        <JFXButton id="btnPainelCentral" fx:id="btnConsultarProjeto" alignment="CENTER" buttonType="RAISED" contentDisplay="BOTTOM" focusTraversable="false" layoutX="680.0" layoutY="140.0" onAction="#telaConsultarProjeto" stylesheets="@application.css" text="RealIzar Consultas">
+            <graphic>
+                <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../images/procurar.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </JFXButton>
+    </children>
+</Pane>

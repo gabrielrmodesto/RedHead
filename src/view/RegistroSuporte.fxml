@@ -1,14 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.net.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RegistroSuporteController">
-    <stylesheets>
-        <URL value="@style.css"/>
-    </stylesheets>
-</AnchorPane>
+<StackPane fx:id="stackRegistro" prefHeight="678.0" prefWidth="1170.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControllerRegistroSuporte">
+    <children>
+        <Pane fx:id="painelRegistrar" prefHeight="678.0" prefWidth="1170.0">
+            <children>
+                <Label id="tituloInicial" layoutX="200.0" layoutY="40.0" stylesheets="@application.css" text="Registro de Suporte" />
+                <JFXTextField id="campoCadastro" fx:id="nomeCliente" focusColor="#4d4d4d" focusTraversable="false" labelFloat="true" layoutX="200.0" layoutY="129.0" prefHeight="28.0" prefWidth="739.0" promptText="Nome Cliente" stylesheets="@application.css" />
+                <JFXTextField id="campoCadastro" fx:id="cpfCNPJ" focusColor="#4d4d4d" focusTraversable="false" labelFloat="true" layoutX="200.0" layoutY="200.0" prefHeight="28.0" prefWidth="219.0" promptText="CPF/CNPJ Cliente" stylesheets="@application.css" />
+                <JFXTextField id="campoCadastro" fx:id="codigo" focusColor="#4d4d4d" focusTraversable="false" labelFloat="true" layoutX="506.0" layoutY="200.0" prefHeight="28.0" prefWidth="141.0" promptText="Código do Projeto" stylesheets="@application.css" />
+                <JFXComboBox id="campoCadastro" fx:id="tipo" focusColor="#4d4d4d" focusTraversable="false" labelFloat="true" layoutX="740.0" layoutY="200.0" prefHeight="25.0" prefWidth="200.0" promptText="Tipo de reclamação" stylesheets="@application.css" />
+                <TextArea id="campoCadastro" fx:id="txtMotivo" focusTraversable="false" layoutX="200.0" layoutY="390.0" prefHeight="150.0" prefWidth="780.0" stylesheets="@application.css" wrapText="true" />
+                <Label id="campoCadastro" layoutX="200.0" layoutY="350.0" stylesheets="@application.css" text="Motivo do Suporte" />
+                <JFXTextField id="campoCadastro" fx:id="atendente" focusColor="#4d4d4d" focusTraversable="false" labelFloat="true" layoutX="200.0" layoutY="280.0" prefHeight="28.0" prefWidth="219.0" promptText="Atendente (CPF)" stylesheets="@application.css" />
+                <JFXButton id="botaoCadastro" fx:id="btnRegistrar" focusTraversable="false" layoutX="770.0" layoutY="560.0" onAction="#registrarSuporte" stylesheets="@application.css" text="Registrar" />
+                <JFXButton id="botaoCadastro" fx:id="btnLimpar" focusTraversable="false" layoutX="930.0" layoutY="560.0" onAction="#limpaCampos" stylesheets="@application.css" text="Limpar" />
+            </children>
+        </Pane>
+    </children>
+</StackPane>
