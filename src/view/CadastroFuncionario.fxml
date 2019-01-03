@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.StackPane?>
 
-<StackPane fx:id="stackFuncionario" prefHeight="678.0" prefWidth="1170.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControllerCadastroFuncionario">
+<StackPane fx:id="stackFuncionario" prefHeight="678.0" prefWidth="1170.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CadastroFuncionarioController">
     <children>
         <Pane fx:id="painelFuncionario" prefHeight="678.0" prefWidth="1170.0">
             <children>

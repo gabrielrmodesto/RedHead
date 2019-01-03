@@ -22,24 +22,16 @@
             <opaqueInsets>
                 <Insets />
             </opaqueInsets>
-            <cursor>
-                <Cursor fx:constant="HAND" />
-            </cursor>
         </JFXButton>
         <JFXButton id="btnPainelCentral" fx:id="btnCadastrarClientes" alignment="CENTER" buttonType="RAISED" contentDisplay="BOTTOM" focusTraversable="false" layoutX="150.0" layoutY="140.0" onAction="#telaCadastrarCliente" stylesheets="@style.css" text="Cadastrar Clientes">
             <graphic>
                 <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
                     <image>
                         <Image url="@../images/clientes.png" />
-                    </image>
-                    <cursor>
-                        <Cursor fx:constant="HAND" />
-                    </cursor>
+                    </image>                   
                 </ImageView>
             </graphic>
-            <cursor>
-                <Cursor fx:constant="HAND" />
-            </cursor>
+            
         </JFXButton>
         <JFXButton id="btnPainelCentral" fx:id="btnConsultarClientes" alignment="CENTER" buttonType="RAISED" contentDisplay="BOTTOM" focusTraversable="false" layoutX="680.0" layoutY="140.0" onAction="#telaConsultarCliente" stylesheets="@style.css" text="Consultar Dados de Clientes">
             <graphic>
@@ -49,9 +41,6 @@
                     </image>
                 </ImageView>
             </graphic>
-            <cursor>
-                <Cursor fx:constant="HAND" />
-            </cursor>
         </JFXButton>
     </children>
 </Pane>

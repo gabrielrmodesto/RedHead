@@ -17,9 +17,6 @@
                     </image>
                 </ImageView>
             </graphic>
-            <cursor>
-                <Cursor fx:constant="HAND" />
-            </cursor>
         </JFXButton>
         <Label id="tituloInicial" layoutX="200.0" layoutY="40.0" stylesheets="@style.css" text="Funcionários da REDHEAD" />
         <JFXButton id="btnPainelCentral" fx:id="btnCadastro" alignment="CENTER" buttonType="RAISED" contentDisplay="BOTTOM" focusTraversable="false" layoutX="150.0" layoutY="140.0" onAction="#telaCadastroFuncionario" stylesheets="@style.css" text="Cadastrar Funcionário">
@@ -30,9 +27,6 @@
                     </image>
                 </ImageView>
             </graphic>
-            <cursor>
-                <Cursor fx:constant="HAND" />
-            </cursor>
         </JFXButton>
         <JFXButton id="btnPainelCentral" fx:id="btnConsulta" alignment="CENTER" buttonType="RAISED" contentDisplay="BOTTOM" focusTraversable="false" layoutX="680.0" layoutY="140.0" onAction="#telaConsultaFuncionario" stylesheets="@style.css" text="Realizar Consultas">
             <graphic>
@@ -42,9 +36,6 @@
                     </image>
                 </ImageView>
             </graphic>
-            <cursor>
-                <Cursor fx:constant="HAND" />
-            </cursor>
         </JFXButton>
     </children>
 </Pane>

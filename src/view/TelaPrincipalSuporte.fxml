@@ -18,9 +18,6 @@
                     </image>
                 </ImageView>
             </graphic>
-            <cursor>
-                <Cursor fx:constant="HAND" />
-            </cursor>
         </JFXButton>
         <JFXButton id="btnPainelCentral" fx:id="btnHistoricoSuporte" alignment="CENTER" buttonType="RAISED" contentDisplay="BOTTOM" focusTraversable="false" layoutX="681.0" layoutY="264.0" onAction="#telaHistoricoSuporte" stylesheets="@style.css" text="Histórico de Suportes">
             <graphic>
@@ -30,9 +27,6 @@
                     </image>
                 </ImageView>
             </graphic>
-            <cursor>
-                <Cursor fx:constant="HAND" />
-            </cursor>
         </JFXButton>
     </children>
 </Pane>

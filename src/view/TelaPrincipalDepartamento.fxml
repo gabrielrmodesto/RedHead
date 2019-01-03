@@ -11,9 +11,6 @@
     <children>
         <Label id="tituloInicial" layoutX="200.0" layoutY="40.0" stylesheets="@style.css" text="Departamentos da REDHEAD" />
         <JFXButton id="btnPainelCentral" fx:id="btnCadastarDepartamento" alignment="CENTER" buttonType="RAISED" contentDisplay="BOTTOM" focusTraversable="false" layoutX="150.0" layoutY="140.0" onAction="#telaCadastrarDepartamento" stylesheets="@style.css" text="Cadastrar Departamento">
-            <cursor>
-                <Cursor fx:constant="HAND" />
-            </cursor>
             <graphic>
                 <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
                     <image>
@@ -30,9 +27,6 @@
                     </image>
                 </ImageView>
             </graphic>
-            <cursor>
-                <Cursor fx:constant="HAND" />
-            </cursor>
         </JFXButton>
         <JFXButton id="btnPainelCentral" fx:id="btnAlterarDepartamento" alignment="CENTER" buttonType="RAISED" contentDisplay="BOTTOM" focusTraversable="false" layoutX="430.0" layoutY="390.0" onAction="#telaAlterarDepartamento" stylesheets="@style.css" text="Realizar Alterações">
             <graphic>
@@ -42,9 +36,6 @@
                     </image>
                 </ImageView>
             </graphic>
-            <cursor>
-                <Cursor fx:constant="HAND" />
-            </cursor>
         </JFXButton>
     </children>
 </Pane>

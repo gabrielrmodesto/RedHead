@@ -36,7 +36,7 @@
                         </ImageView>
                     </graphic>
                 </JFXButton>
-                <JFXButton id="btnEscolherFoto" fx:id="btnEscolher" alignment="CENTER" buttonType="RAISED" defaultButton="true" layoutX="910.0" layoutY="356.0" onAction="#escolheFoto" stylesheets="@style.css" text="Escolher Foto" />
+                <JFXButton id="btnEscolherFoto" fx:id="btnEscolher2" alignment="CENTER" buttonType="RAISED" defaultButton="true" layoutX="910.0" layoutY="356.0" onAction="#escolheFoto" stylesheets="@style.css" text="Escolher Foto" />
                 <JFXTextField id="campoCadastro" focusColor="#4d4d4d" labelFloat="true" layoutX="582.0" layoutY="230.0" prefHeight="28.0" prefWidth="193.0" promptText="Registro" stylesheets="@style.css" />
 
             </children>

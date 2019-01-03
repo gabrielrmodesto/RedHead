@@ -18,9 +18,6 @@
                     </image>
                 </ImageView>
             </graphic>
-            <cursor>
-                <Cursor fx:constant="HAND" />
-            </cursor>
         </JFXButton>
         <JFXButton id="btnPainelCentral" fx:id="btnAlterarProjeto" alignment="CENTER" buttonType="RAISED" contentDisplay="BOTTOM" focusTraversable="false" layoutX="430.0" layoutY="390.0" onAction="#telaAlteraProjeto" stylesheets="@style.css" text="Realizar Alterações">
             <graphic>
@@ -30,9 +27,6 @@
                     </image>
                 </ImageView>
             </graphic>
-            <cursor>
-                <Cursor fx:constant="HAND" />
-            </cursor>
         </JFXButton>
         <JFXButton id="btnPainelCentral" fx:id="btnConsultarProjeto" alignment="CENTER" buttonType="RAISED" contentDisplay="BOTTOM" focusTraversable="false" layoutX="680.0" layoutY="140.0" onAction="#telaConsultarProjeto" stylesheets="@style.css" text="RealIzar Consultas">
             <graphic>
@@ -42,9 +36,6 @@
                     </image>
                 </ImageView>
             </graphic>
-            <cursor>
-                <Cursor fx:constant="HAND" />
-            </cursor>
         </JFXButton>
     </children>
 </Pane>
