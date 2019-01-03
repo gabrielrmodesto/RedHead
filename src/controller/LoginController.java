@@ -48,7 +48,7 @@ public class LoginController implements Initializable {
     private void clicaLogin(ActionEvent event){
         if(usuario.autenticaLogin(txtLogin.getText(), txtSenha.getText())){
             try{
-                Parent btn_login_parent = FXMLLoader.load(getClass().getResource("DashBoard.fxml"));
+                Parent btn_login_parent = FXMLLoader.load(getClass().getResource("../view/DashBoard.fxml"));
                 Scene btn_login_scene = new Scene(btn_login_parent);
                 Stage btn_login_stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
                 btn_login_stage.close();
