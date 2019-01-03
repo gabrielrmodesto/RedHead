@@ -90,7 +90,7 @@ public class DashBoardController implements Initializable {
     }
     private void carregaTelaDepartamento() throws IOException {
         try {
-            Pane painelDepartamento = FXMLLoader.load(getClass().getResource("TelaPrincipalDepartamento.fxml"));
+            Pane painelDepartamento = FXMLLoader.load(getClass().getResource("../view/TelaPrincipalDepartamento.fxml"));
             anchorFixo.getChildren().setAll(painelDepartamento);
         } catch (Exception e) {
             // TODO: handle exception
@@ -100,7 +100,7 @@ public class DashBoardController implements Initializable {
 
     private void carregaTelaClientes() throws IOException {
         try {
-            Pane painelClientes = FXMLLoader.load(getClass().getResource("TelaPrincipalClientes.fxml"));
+            Pane painelClientes = FXMLLoader.load(getClass().getResource("../view/TelaPrincipalClientes.fxml"));
             anchorFixo.getChildren().setAll(painelClientes);
         } catch (Exception e) {
             // TODO: handle exception
@@ -110,7 +110,7 @@ public class DashBoardController implements Initializable {
 
     private void carregaTelaFuncionarios() throws IOException {
         try {
-            Pane painelFuncionarios = FXMLLoader.load(getClass().getResource("TelaPrincipalFuncionario.fxml"));
+            Pane painelFuncionarios = FXMLLoader.load(getClass().getResource("../view/TelaPrincipalFuncionario.fxml"));
             anchorFixo.getChildren().setAll(painelFuncionarios);
         } catch (Exception e) {
             // TODO: handle exception
@@ -120,7 +120,7 @@ public class DashBoardController implements Initializable {
 
     private void carregaTelaProjetos() throws IOException {
         try {
-            Pane painelProjetos = FXMLLoader.load(getClass().getResource("TelaPrincipalProjetos.fxml"));
+            Pane painelProjetos = FXMLLoader.load(getClass().getResource("../view/TelaPrincipalProjetos.fxml"));
             anchorFixo.getChildren().setAll(painelProjetos);
         } catch (Exception e) {
             // TODO: handle exception
@@ -130,7 +130,7 @@ public class DashBoardController implements Initializable {
 
     private void carregaTelaSuporte() throws IOException {
         try {
-            Pane painelSuporte = FXMLLoader.load(getClass().getResource("TelaPrincipalSuporte.fxml"));
+            Pane painelSuporte = FXMLLoader.load(getClass().getResource("../view/TelaPrincipalSuporte.fxml"));
             anchorFixo.getChildren().setAll(painelSuporte);
         } catch (Exception e) {
             // TODO: handle exception
@@ -141,7 +141,7 @@ public class DashBoardController implements Initializable {
     @FXML
     public void carregaDash() throws IOException {
         try {
-            Pane painelPrincipal = FXMLLoader.load(getClass().getResource("PaneGrafico.fxml"));
+            Pane painelPrincipal = FXMLLoader.load(getClass().getResource("../view/PaneGrafico.fxml"));
             anchorFixo.getChildren().setAll(painelPrincipal);
         } catch (Exception e) {
             // TODO: handle exception
@@ -163,7 +163,7 @@ public class DashBoardController implements Initializable {
 
     private void telaPerfil() throws IOException{
         try {
-            Pane painelPerfil = FXMLLoader.load(getClass().getResource("perfilGerente.fxml"));
+            Pane painelPerfil = FXMLLoader.load(getClass().getResource("../view/perfilGerente.fxml"));
             anchorFixo.getChildren().setAll(painelPerfil);
         } catch (Exception e) {
             e.printStackTrace();
