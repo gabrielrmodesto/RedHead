@@ -100,7 +100,7 @@ public class DashBoardController implements Initializable {
 
     private void carregaTelaClientes() throws IOException {
         try {
-            Pane painelClientes = FXMLLoader.load(getClass().getResource("../view/TelaPrincipalClientes.fxml"));
+            Pane painelClientes = FXMLLoader.load(getClass().getResource("../view/TelaPrincipalCliente.fxml"));
             anchorFixo.getChildren().setAll(painelClientes);
         } catch (Exception e) {
             // TODO: handle exception
@@ -120,7 +120,7 @@ public class DashBoardController implements Initializable {
 
     private void carregaTelaProjetos() throws IOException {
         try {
-            Pane painelProjetos = FXMLLoader.load(getClass().getResource("../view/TelaPrincipalProjetos.fxml"));
+            Pane painelProjetos = FXMLLoader.load(getClass().getResource("../view/TelaPrincipalProjeto.fxml"));
             anchorFixo.getChildren().setAll(painelProjetos);
         } catch (Exception e) {
             // TODO: handle exception
