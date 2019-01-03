@@ -25,6 +25,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.TreeItem;
 import javafx.scene.control.TreeTableColumn;
+import javafx.scene.layout.Pane;
 import javafx.util.Callback;
 import model.bean.Departamento;
 import model.dao.DepartamentoDAO;
