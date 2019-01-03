@@ -72,7 +72,7 @@ public class TelaPrincipalFuncionarioController implements Initializable {
 
     private void carregaTelaConsultaFuncionario() {
         try {
-            Pane painelConsultar = FXMLLoader.load(getClass().getResource("../view/ConsultarFuncionario.fxml"));
+            Pane painelConsultar = FXMLLoader.load(getClass().getResource("../view/ConsultaFuncionario.fxml"));
             painelFuncionarios.getChildren().setAll(painelConsultar);
         } catch (IOException e) {
             // TODO Auto-generated catch block
