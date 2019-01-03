@@ -56,7 +56,7 @@ public class TelaPrincipalSuporteController implements Initializable {
 
     private void carregaTelaHistoricoSuporte() {
         try {
-            Pane painelRegistrar = FXMLLoader.load(getClass().getResource("HistoricoSuporte.fxml"));
+            Pane painelRegistrar = FXMLLoader.load(getClass().getResource("../view/HistoricoSuporte.fxml"));
             painelSuporte.getChildren().setAll(painelRegistrar);
         } catch (Exception e) {
             // TODO: handle exception
@@ -67,7 +67,7 @@ public class TelaPrincipalSuporteController implements Initializable {
 
     private void carregaTelaRegistrarSuporte() throws IOException {
         try {
-            Pane painelRegistrar = FXMLLoader.load(getClass().getResource("RegistroSuporte.fxml"));
+            Pane painelRegistrar = FXMLLoader.load(getClass().getResource("../view/RegistroSuporte.fxml"));
             painelSuporte.getChildren().setAll(painelRegistrar);
         } catch (Exception e) {
             // TODO: handle exception

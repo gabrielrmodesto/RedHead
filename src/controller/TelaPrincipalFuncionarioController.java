@@ -50,7 +50,7 @@ public class TelaPrincipalFuncionarioController implements Initializable {
 
     private void carregaCadastroFuncionario() throws IOException {
         try {
-            Pane painelCadastrar = FXMLLoader.load(getClass().getResource("CadastroFuncionario.fxml"));
+            Pane painelCadastrar = FXMLLoader.load(getClass().getResource("../view/CadastroFuncionario.fxml"));
             painelFuncionarios.getChildren().setAll(painelCadastrar);
         } catch (IOException e) {
             // TODO Auto-generated catch block
@@ -60,7 +60,7 @@ public class TelaPrincipalFuncionarioController implements Initializable {
 
     private void carregaTelaAlteraFuncionario() {
         try {
-            Pane painelAlterar = FXMLLoader.load(getClass().getResource("AlteraFuncionario.fxml"));
+            Pane painelAlterar = FXMLLoader.load(getClass().getResource("../view/AlteraFuncionario.fxml"));
             painelFuncionarios.getChildren().setAll(painelAlterar);
         } catch (IOException e) {
             // TODO Auto-generated catch block
@@ -72,7 +72,7 @@ public class TelaPrincipalFuncionarioController implements Initializable {
 
     private void carregaTelaConsultaFuncionario() {
         try {
-            Pane painelConsultar = FXMLLoader.load(getClass().getResource("ConsultarFuncionario.fxml"));
+            Pane painelConsultar = FXMLLoader.load(getClass().getResource("../view/ConsultarFuncionario.fxml"));
             painelFuncionarios.getChildren().setAll(painelConsultar);
         } catch (IOException e) {
             // TODO Auto-generated catch block

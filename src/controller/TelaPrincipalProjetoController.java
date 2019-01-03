@@ -50,7 +50,7 @@ public class TelaPrincipalProjetoController implements Initializable {
 
     private void carregaTelaAlteraProjeto() {
         try {
-            Pane painelAltera = FXMLLoader.load(getClass().getResource("AlterarProjeto.fxml"));
+            Pane painelAltera = FXMLLoader.load(getClass().getResource("../view/AlterarProjeto.fxml"));
             painelProjetos.getChildren().setAll(painelAltera);
         } catch (Exception e) {
             // TODO: handle exception
@@ -60,7 +60,7 @@ public class TelaPrincipalProjetoController implements Initializable {
 
     private void carregaTelaCadastrarProjeto() throws IOException {
         try {
-            Pane painelCadastro = FXMLLoader.load(getClass().getResource("CadastroProjetos.fxml"));
+            Pane painelCadastro = FXMLLoader.load(getClass().getResource("../view/CadastroProjetos.fxml"));
             painelProjetos.getChildren().setAll(painelCadastro);
         } catch (Exception e) {
             // TODO: handle exception
@@ -70,7 +70,7 @@ public class TelaPrincipalProjetoController implements Initializable {
 
     private void carregaTelaConsultarProjeto() {
         try {
-            Pane painelConsulta = FXMLLoader.load(getClass().getResource("ConsultarProjetos.fxml"));
+            Pane painelConsulta = FXMLLoader.load(getClass().getResource("../view/ConsultarProjetos.fxml"));
             painelProjetos.getChildren().setAll(painelConsulta);
         } catch (Exception e) {
             // TODO: handle exception

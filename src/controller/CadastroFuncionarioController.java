@@ -124,7 +124,7 @@ public class CadastroFuncionarioController implements Initializable {
     }
     private void carregaLoginGerente(){  	
         try {
-            Pane painelConsulta = FXMLLoader.load(getClass().getResource("EscolherLogin.fxml"));
+            Pane painelConsulta = FXMLLoader.load(getClass().getResource("../view/EscolherLogin.fxml"));
             painelFuncionario.getChildren().setAll(painelConsulta);
         } catch (IOException e) {
             // TODO Auto-generated catch block

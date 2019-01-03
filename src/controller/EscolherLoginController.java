@@ -66,7 +66,7 @@ public class EscolherLoginController implements Initializable {
     
     private void voltaCadastro() {
         try {
-            Pane painelCadastro = FXMLLoader.load(getClass().getResource("CadastroFuncionario.fxml"));
+            Pane painelCadastro = FXMLLoader.load(getClass().getResource("../view/CadastroFuncionario.fxml"));
             painelLogin.getChildren().setAll(painelCadastro);
         } catch (Exception e) {
             System.out.println(e.getMessage());
