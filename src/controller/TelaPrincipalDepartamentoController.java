@@ -55,7 +55,7 @@ public class TelaPrincipalDepartamentoController implements Initializable {
 
     private void carregaTelaConsulta() throws IOException {
         try {
-            Pane painelConsulta = FXMLLoader.load(getClass().getResource("../view/ConsultarDepartamento.fxml"));
+            Pane painelConsulta = FXMLLoader.load(getClass().getResource("../view/ConsultaDepartamento.fxml"));
             painelDepartamento.getChildren().setAll(painelConsulta);
         } catch (Exception e) {
             System.out.println(e.getMessage());
@@ -65,7 +65,7 @@ public class TelaPrincipalDepartamentoController implements Initializable {
     }
 
     private void carregaTelaAltera() throws IOException {
-        Pane painelAltera = FXMLLoader.load(getClass().getResource("../view/AlterarDepartamento.fxml"));
+        Pane painelAltera = FXMLLoader.load(getClass().getResource("../view/AlteraDepartamento.fxml"));
         painelDepartamento.getChildren().setAll(painelAltera);
     }
 

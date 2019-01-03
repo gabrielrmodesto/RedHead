@@ -60,14 +60,14 @@ public class TelaPrincipalClienteController implements Initializable {
     }
 
     private void carregaTelaConsultarCliente() throws IOException {
-        Pane painelConsultar = FXMLLoader.load(getClass().getResource("../view/ConsultarClientes.fxml"));
+        Pane painelConsultar = FXMLLoader.load(getClass().getResource("../view/ConsultaClientes.fxml"));
         painelClientes.getChildren().setAll(painelConsultar);
 
     }
 
     private void carregaTelaAlterarCliente() throws IOException {
         try {
-            Pane painelAlterar = FXMLLoader.load(getClass().getResource("../view/AlterarCliente.fxml"));
+            Pane painelAlterar = FXMLLoader.load(getClass().getResource("../view/AlteraCliente.fxml"));
             painelClientes.getChildren().setAll(painelAlterar);
         } catch (Exception e) {
             System.out.println(e.getMessage());
