@@ -141,7 +141,7 @@ public class DashBoardController implements Initializable {
     @FXML
     public void carregaDash() throws IOException {
         try {
-            Pane painelPrincipal = FXMLLoader.load(getClass().getResource("../view/PaneGrafico.fxml"));
+            Pane painelPrincipal = FXMLLoader.load(getClass().getResource("../view/PanelGrafico.fxml"));
             anchorFixo.getChildren().setAll(painelPrincipal);
         } catch (Exception e) {
             // TODO: handle exception

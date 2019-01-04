@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import com.calendarfx.view.WeekDayHeaderView?>
 <?import com.jfoenix.controls.JFXButton?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.image.Image?>
@@ -9,7 +8,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.StackPane?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashBoardController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashBoardController">
     <children>
         <Pane layoutY="-6.0" prefHeight="768.0" prefWidth="1366.0" AnchorPane.bottomAnchor="6.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-6.0">
             <children>
@@ -74,9 +73,9 @@
                         </JFXButton>
                     </children>
                 </Pane>
-                <Pane id="panelTop" layoutX="199.0" prefHeight="60.0" prefWidth="1170.0" stylesheets="@style.css">
+                <Pane id="panelTop" layoutX="199.0" prefHeight="89.0" prefWidth="1170.0" stylesheets="@style.css">
                     <children>
-                        <JFXButton fx:id="botaoImagemUser" buttonType="RAISED" focusTraversable="false" layoutX="1015.0" layoutY="4.0" onAction="#carregaTelaPerfil" prefHeight="50.0" prefWidth="67.0" text=" ">
+                        <JFXButton fx:id="botaoImagemUser" buttonType="RAISED" focusTraversable="false" layoutX="1015.0" layoutY="20.0" onAction="#carregaTelaPerfil" prefHeight="50.0" prefWidth="67.0" text=" ">
                             <graphic>
                                 <ImageView fx:id="imagemUser" fitHeight="45.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
                                     <image>
@@ -85,7 +84,7 @@
                                 </ImageView>
                             </graphic>
                         </JFXButton>
-                        <JFXButton fx:id="botaoSair" buttonType="RAISED" focusTraversable="false" layoutX="1083.0" layoutY="11.0" onAction="#sairPrograma" text=" ">
+                        <JFXButton fx:id="botaoSair" buttonType="RAISED" focusTraversable="false" layoutX="1083.0" layoutY="25.0" onAction="#sairPrograma" text=" ">
                             <graphic>
                                 <ImageView fitHeight="30.0" fitWidth="30.0" focusTraversable="true" pickOnBounds="true" preserveRatio="true">
                                     <image>
@@ -96,7 +95,6 @@
                         </JFXButton>
                     </children>
                 </Pane>
-                <WeekDayHeaderView layoutX="199.0" layoutY="60.0" prefHeight="30.0" prefWidth="1174.0" />
                 <StackPane fx:id="stackDash" layoutX="199.0" layoutY="90.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="678.0" prefWidth="1170.0">
                     <children>
                         <AnchorPane id="anchorPai" fx:id="anchorFixo" accessibleRole="PAGINATION" prefHeight="678.0" prefWidth="1170.0" stylesheets="@style.css" />
