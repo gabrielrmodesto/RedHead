@@ -163,7 +163,7 @@ public class DashBoardController implements Initializable {
 
     private void telaPerfil() throws IOException{
         try {
-            Pane painelPerfil = FXMLLoader.load(getClass().getResource("../view/perfilGerente.fxml"));
+            Pane painelPerfil = FXMLLoader.load(getClass().getResource("../view/PerfilGerente.fxml"));
             anchorFixo.getChildren().setAll(painelPerfil);
         } catch (Exception e) {
             e.printStackTrace();
